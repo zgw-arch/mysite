@@ -7,7 +7,7 @@
 	/* 下面这几行是新增的背景图配置 */
 	/* 加文字阴影，提升可读性 */
 	text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-	 background: url("1.jpg") center / cover no-repeat;
+	 background: url("1.png") center / cover no-repeat;
 	 padding: 30px 20px;    /* 给文字留内边距，别贴着背景边 */
 	 border-radius: 12px;   /* 加个圆角，和天气卡片风格统一 */
 	 max-width: 600px;      /* 限制容器宽度，别拉太宽 */
