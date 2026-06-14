@@ -48,3 +48,9 @@
 	background: url("1.png") center / cover no-repeat;
 	border-radius: 16px;
 }
+html, body {
+  background-color: #f0f8f0;
+  /* 备选浅绿：#f5fff5 / #ecf7ec / #eef9ee 任选其一替换上面色值 */
+  min-height: 100%;
+}
+
