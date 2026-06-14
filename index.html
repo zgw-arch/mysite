@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href="style3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>作品</title>
+</head>
+<body>
+
+
+<header class="page-header">
+  <h1>我的作品</h1>
+</header>
+
+<div class="banner" id="banner">
+  <h1>你好，我是前端<br>开发者</h1>
+  <!-- 打字机容器 -->
+  <p id="typeText"></p>
+  <!-- 删掉访问量那一行 -->
+  <div id="down-arrow">↓</div>
+</div>
+
+<div style="height:50px;"></div>
+
+<div id="d">
+<p id="weatherTitle">天气项目演示<br>(实时更新)</p>
+
+<div id="weather-header">
+	<div id="city-name">&nbsp&nbsp&nbsp&nbsp&nbsp苏州</div>
+	<button id="detail-btn">切换城市</button>
+</div>
+
+<!-- 所有内容统一收纳进#c -->
+<div id="c">
+  <div id="currentTemp"></div>
+  <div id="a">
+	<div id="weatherText"></div>
+	<div id="windSpeedType"></div>
+  </div>
+
+  <div id="b">
+	<div id="windSpeedNum"></div>
+	<div id="aqiLevel"></div>
+	<div id="uvIndex"></div>
+  </div>
+
+  <!-- 独立放在#b外面，不会被JS刷新覆盖 -->
+  <div id="text">注意:夜晚紫外线强度基本为0</div>
+</div>
+<div style="height:10px;"></div>
+<div class="forecast-card">
+  <h3 class="forecast-title">未来5天预报</h3>
+  <div class="forecast-list" id="forecastList"></div>
+</div>
+
+
+</div>
+
+<script src="weatherApi.js"></script>
+
+<div style="height:50px;"></div>
+
+<div id="container">
+<p id="tip">随机诗词展示</p>
+	<!-- 纯空白容器，无样式、无布局渲染 -->
+	<div id="poem"></div>
+	<!-- 引入外部独立的poem.js脚本文件 -->
+	<button id="refreshBtn">更换诗词</button>
+</div>	
+	<script src="poem.js"></script>
+
+
+
+
+<!-- 留言板模块 -->
+<section id="message">
+  <div class="container fade-box">
+	<h2 class="section-title">留言板</h2>
+	<div class="msg-board">
+	  <!-- 发布留言区域 -->
+	  <div class="publishing-box">
+		<textarea id="msgText" placeholder="请输入留言内容..."></textarea>
+		<button id="sendBtn">提交留言</button>
+		<h3 class="list-title">留言列表</h3>
+		<textarea id="msgText1" readonly placeholder="留言列表展示"></textarea>
+	  </div>
+	</div>
+  </div>
+</section>
+
+<script>
+window.addEventListener('load', function() {
+  const inputBox = document.getElementById('msgText');
+  const outputBox = document.getElementById('msgText1');
+  const submitBtn = document.getElementById('sendBtn');
+
+  submitBtn.onclick = function() {
+	const content = inputBox.value.trim();
+	if (!content) {
+	  alert('留言内容不能为空！');
+	  return;
+	}
+
+	const now = new Date().toLocaleString();
+	const newMsg = `【${now}】\n${content}\n——————————————\n`;
+	outputBox.value = newMsg + outputBox.value;
+
+	inputBox.value = '';
+  }
+});
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
