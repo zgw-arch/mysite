@@ -9,25 +9,21 @@ body {
   background-color: #f5f7fa;
 }
 
-/* 外层满屏，和#d结构一模一样 */
+/* 技能外层容器：不再全屏铺满，自带最大宽度，整体居中 */
 #skills-container {
-  width: 100%;
-  max-width: none;
-  box-sizing: border-box;
-  min-height: 100vh;
-  font-family: sans-serif;
-  border-radius: 20px;
-  overflow: hidden;
-  padding-top: 30px;
-  margin: 0 auto;
-}
-/* 内部所有子元素统一居中限宽600px，左右留20安全边距 */
-#skills-container > * {
   max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* 移除width:100%全屏属性，只做限定宽度容器 */
+}
+
+/* 内部直接子元素统一规则，和原有逻辑一致 */
+#skills-container > * {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
 }
+
 
 #section-title {
   text-align: center;
