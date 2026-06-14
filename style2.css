@@ -99,27 +99,21 @@ font-size: 14px;
    top: 280px;    /* 距离容器顶部200px */
    left: 50%;    /* 距离容器左侧50% */
    transform: translateX(-50%); /* 水平居中 */}
-#d {margin: 0 20px;
 
-   max-width: 600px;      /* 限制容器宽度，别拉太宽 */
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   min-height: 100vh;
-   background: linear-gradient(180deg, #6a77e0 0%, #7c43b8 100%);
-   font-family: sans-serif;
-   border-radius: 20px;
-   overflow: hidden;
-   /* 加这一行，数值根据你页眉高度调，比如页眉高70px，这里就写80px */
-   padding-top: 30px;
+  #d {
+  max-width: 600px;
+  margin: 0 auto; /* 水平居中，自动左右边距 */
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #6a77e0 0%, #7c43b8 100%);
+  font-family: sans-serif;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-top: 30px; /* 给页眉留出空间 */
+  padding-left: 20px;  /* 左侧内边距，避免内容贴边 */
+  padding-right: 20px; /* 右侧内边距，避免内容贴边 */
 }
-/* 额外：清除body默认边距，避免上下还有留白 */
 
-  
-  
-  
-  
-  
   
 .forecast-card {
   /* 左右边距 20px 直接生效 */
