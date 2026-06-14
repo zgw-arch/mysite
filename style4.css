@@ -14,7 +14,12 @@ body {
   width: 100%;
   max-width: none;
   box-sizing: border-box;
-  padding: 40px 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-top: 30px;
+  margin: 0 auto;
 }
 /* 内部所有子元素统一居中限宽600px，左右留20安全边距 */
 #skills-container > * {
