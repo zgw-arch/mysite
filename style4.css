@@ -11,17 +11,9 @@ body {
 
 /* 技能外层容器：不再全屏铺满，自带最大宽度，整体居中 */
 #skills-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 20px;
-  /* 移除width:100%全屏属性，只做限定宽度容器 */
-}
-
-/* 内部直接子元素统一规则，和原有逻辑一致 */
-#skills-container > * {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 400px; /* 从600px改成400px，直接变瘦 */
+  margin: 40px auto 60px auto; /* 上下间距不变，左右自动居中 */
+  padding: 0 20px; /* 手机端左右安全边距，避免贴边 */
 }
 
 
