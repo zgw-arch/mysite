@@ -96,7 +96,7 @@ margin-right: 10px;
 font-size: 14px;
    position: absolute;
    /* 在这写你想要的坐标 */
-   top: 280px;    /* 距离容器顶部200px */
+   top: 250px;    /* 距离容器顶部200px */
    left: 50%;    /* 距离容器左侧50% */
    transform: translateX(-50%); /* 水平居中 */}
 
