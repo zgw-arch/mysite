@@ -1,0 +1,50 @@
+#poem {
+	color: #ffffff;
+	font-style: italic;
+	text-align: center;
+	margin-top: 100px;
+	font-size: 18px;
+	/* 下面这几行是新增的背景图配置 */
+	/* 加文字阴影，提升可读性 */
+	text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+	 background: url("1.jpg") center / cover no-repeat;
+	 padding: 30px 20px;    /* 给文字留内边距，别贴着背景边 */
+	 border-radius: 12px;   /* 加个圆角，和天气卡片风格统一 */
+	 max-width: 600px;      /* 限制容器宽度，别拉太宽 */
+	 margin-left: auto;
+	 margin-right: auto;
+}
+
+#tip {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+#refreshBtn {
+	margin: 30px auto 0;
+	display: block;
+	padding: 10px 26px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+	background: #667eea;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+#refreshBtn:hover {
+	background: #586ed6;
+	transform: translateY(-2px);
+}
+#refreshBtn:active {
+	transform: translateY(0);
+}
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background: url("1.jpg") center / cover no-repeat;
+	border-radius: 16px;
+}
