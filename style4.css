@@ -1,5 +1,5 @@
 * {
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Microsoft Yahei", sans-serif;
@@ -7,7 +7,17 @@
 
 body {
   background-color: #f5f7fa;
-  padding: 40px 20px;
+  padding: 40px 0;
+}
+/* 选中技能全部子元素，统一限宽居中 */
+body > h2#section-title,
+body > #divider-line,
+body > .skill-card {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #section-title {
