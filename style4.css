@@ -7,7 +7,21 @@
 
 body {
   background-color: #f5f7fa;
-  padding: 40px 20px;
+}
+
+/* 外层满屏，和#d结构一模一样 */
+#skills-container {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding: 40px 0;
+}
+/* 内部所有子元素统一居中限宽600px，左右留20安全边距 */
+#skills-container > * {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 #section-title {
@@ -25,22 +39,12 @@ body {
   margin: 0 auto 40px auto;
 }
 
-/* 关键：用弹性盒让卡片横向排列 */
-.skills-wrapper {
-  display: flex;
-  flex-wrap: wrap; /* 屏幕不够宽时自动换行 */
-  gap: 25px;      /* 卡片之间的间距 */
-  justify-content: center; /* 整体居中 */
-}
-
 .skill-card {
   background: #fff;
   border-radius: 16px;
   padding: 25px 22px;
+  margin-bottom: 25px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  /* 控制卡片宽度，保证电脑端并排 */
-  flex: 1 1 220px;
-  max-width: 280px;
 }
 
 #skill-name-css,
@@ -83,4 +87,3 @@ body {
 #progress-bar-html {
   width: 18.4%;
 }
-
