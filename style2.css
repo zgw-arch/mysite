@@ -99,10 +99,9 @@ font-size: 14px;
    top: 280px;    /* 距离容器顶部200px */
    left: 50%;    /* 距离容器左侧50% */
    transform: translateX(-50%); /* 水平居中 */}
-#d {
+#d {margin: 0 20px;
+
    max-width: 600px;      /* 限制容器宽度，别拉太宽 */
-	margin-left: auto;
-	 margin-right: auto;
    box-sizing: border-box;
    margin: 0;
    padding: 0;
