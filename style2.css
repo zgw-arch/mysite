@@ -100,19 +100,26 @@ font-size: 14px;
    left: 50%;    /* 距离容器左侧50% */
    transform: translateX(-50%); /* 水平居中 */}
 
+  
   #d {
-  max-width: 600px;
-  margin: 0 auto; /* 水平居中，自动左右边距 */
+  width: 100%;
+  max-width: none;
   box-sizing: border-box;
   min-height: 100vh;
   background: linear-gradient(180deg, #6a77e0 0%, #7c43b8 100%);
   font-family: sans-serif;
   border-radius: 20px;
   overflow: hidden;
-  padding-top: 30px; /* 给页眉留出空间 */
-  padding-left: 20px;  /* 左侧内边距，避免内容贴边 */
-  padding-right: 20px; /* 右侧内边距，避免内容贴边 */
+  padding-top: 30px;
+  margin: 0 auto;
 }
+#d > * {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
 
   
 .forecast-card {
